@@ -5,8 +5,14 @@
     "now-build": "next build"
   },
   "dependencies": {
+    "@zeit/next-css": "1.0.1",
+    "antd": "3.16.5",
     "next": "^8.0.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  }
+    "react-dom": "^16.7.0",
+    "styled-components": "4.2.0"
+  },
+  "keywords": [],
+  "name": "ultimate-admin",
+  "description": "A admin environment build on nextjs and ant.design"
 }

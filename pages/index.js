@@ -1,16 +1,19 @@
 import Link from "next/link";
-import Header from "../components/header";
+import { Page } from "../renderprops";
 
 function Index() {
   return (
-    <main>
-      <Header />
-      <section>
-        <Link href="/about">
-          <a>Go to About Me.</a>
-        </Link>
-      </section>
-    </main>
+    <Page>
+      {() => (
+        <>
+          yo! welcome!
+          <br />
+          <Link href="/about">
+            <a>Go to About</a>
+          </Link>
+        </>
+      )}
+    </Page>
   );
 }
 

@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Link from "next/link";
-import Header from "../components/header";
+import { Page } from "../renderprops";
 
 class AboutPage extends Component {
   static getInitialProps() {
@@ -10,21 +10,17 @@ class AboutPage extends Component {
 
   render() {
     return (
-      <main>
-        <Header />
-        <section>
-          <p>YUP
-            This is another page of the SSR example, you accessed it{" "}
-            <strong>{this.props.isServer ? "server" : "client"} side</strong>.
-          </p>
-          <p>
-            You can reload to see how the page change.
-          </p>
-          <Link href="/">
-            <a>Go to Home</a>
-          </Link>
-        </section>
-      </main>
+      <Page>
+        {() => (
+          <>
+            how ya doing?
+            <br />
+            <Link href="/">
+              <a>Go to Home</a>
+            </Link>
+          </>
+        )}
+      </Page>
     );
   }
 }
