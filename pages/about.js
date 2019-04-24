@@ -13,7 +13,7 @@ class AboutPage extends Component {
       <main>
         <Header />
         <section>
-          <p>
+          <p>YUP
             This is another page of the SSR example, you accessed it{" "}
             <strong>{this.props.isServer ? "server" : "client"} side</strong>.
           </p>
